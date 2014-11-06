@@ -32,4 +32,4 @@ Commande Git :
 - git push : envoie le dossier présent en local sur le site Github
 - git remit -v : Tous les dépôts auquel est branché notre dépôt en local
 - git push origin master : j'envoi vers origine (master=nom de votre dépôt principal)
-- fit pull origin master: on récupère les modifications
+- git pull origin master: on récupère les modifications
