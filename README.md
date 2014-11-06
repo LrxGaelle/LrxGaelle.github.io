@@ -22,4 +22,6 @@ Sur machine Virtuelle :
 
 Sur Github :
 
-- Créer un compte github configurer github https://pages.github.com
+- Créer un compte github 
+- Créer un "repositories" --> Username.github.io
+- Configurer github https://pages.github.com
