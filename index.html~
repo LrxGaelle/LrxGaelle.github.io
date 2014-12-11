@@ -5,7 +5,7 @@ title: Accueil
 <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Two Column Portfolio
+                <h1 class="page-header">Portfolio
                    <!-- <small>Subheading</small>-->
                 </h1>
                <!-- <ol class="breadcrumb">
@@ -17,18 +17,30 @@ title: Accueil
         </div>
         <!-- /.row -->
 
+
+
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-md-6 img-portfolio">
-                <a href="portfolio-item.html">
+
+            <div class="col-md-12 img-portfolio">
+
+			<ul>
+			  {% for post in site.posts limit:400 %}
+			    <li>
+			      <a href="{{ post.url }}">{{ post.title }}</a>
+				{{ post.excerpt }}
+			    </li>
+			  {% endfor %}
+			</ul>
+                <!--<a href="portfolio-item.html">
                     <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                 </a>
                 <h3>
                     <a href="portfolio-item.html">Project One</a>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>-->
             </div>
-            <div class="col-md-6 img-portfolio">
+            <!--<div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                 </a>
@@ -37,11 +49,11 @@ title: Accueil
                 </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
-        </div>
+        </div>-->
         <!-- /.row -->
 
         <!-- Projects Row -->
-        <div class="row">
+        <!--<div class="row">
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
@@ -60,7 +72,7 @@ title: Accueil
                 </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             </div>
-        </div>
+        </div>-->
         <!-- /.row -->
 
         
